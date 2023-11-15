@@ -31,17 +31,30 @@ namespace contabilidad_1
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(257, 114);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(464, 303);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Bienvenido al Libro Mayor";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LibroMayor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1125, 613);
+            this.Controls.Add(this.label1);
             this.Name = "LibroMayor";
             this.Text = "LibroMayor";
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label label1;
 
         #endregion
     }

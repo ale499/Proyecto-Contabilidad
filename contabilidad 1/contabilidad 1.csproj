@@ -46,6 +46,7 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Cuenta.cs" />
         <Compile Include="LibroMayor.cs">
           <SubType>Form</SubType>
         </Compile>
@@ -64,6 +65,7 @@
         <Compile Include="LibroDiario.Designer.cs">
           <DependentUpon>LibroDiario.cs</DependentUpon>
         </Compile>
+        <Compile Include="PlanData.cs" />
         <Compile Include="PlanCuentas.cs">
           <SubType>Form</SubType>
         </Compile>

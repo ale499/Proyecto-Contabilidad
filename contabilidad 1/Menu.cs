@@ -24,7 +24,8 @@ namespace contabilidad_1
             try
             {
                 LibroDiario libroDiario = new LibroDiario();
-                Show(libroDiario);
+                libroDiario.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {
@@ -35,14 +36,30 @@ namespace contabilidad_1
 
         private void BotonLM_Click(object sender, EventArgs e)
         {
-            LibroMayor libroMayor = new LibroMayor();
-            Close();
-            throw new System.NotImplementedException();
+            try
+            {
+                LibroMayor libroMayor = new LibroMayor();
+                libroMayor.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error al abrir Libro Diario: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void BotonPC_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            try
+            {
+                PlanCuentas planCuentas = new PlanCuentas();
+                planCuentas.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error al abrir Libro Diario: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
