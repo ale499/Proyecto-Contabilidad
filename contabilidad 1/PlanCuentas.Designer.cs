@@ -39,6 +39,8 @@ namespace contabilidad_1
             this.buttonRP = new System.Windows.Forms.RadioButton();
             this.buttonRN = new System.Windows.Forms.RadioButton();
             this.buttonPN = new System.Windows.Forms.RadioButton();
+            this.buttonGuardarCambios = new System.Windows.Forms.Button();
+            this.buttonShow = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -77,7 +79,7 @@ namespace contabilidad_1
             this.buttonActivo.TabStop = true;
             this.buttonActivo.Text = "Activo";
             this.buttonActivo.UseVisualStyleBackColor = true;
-            this.buttonActivo.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.buttonActivo.CheckedChanged += new System.EventHandler(this.buttonActivo_CheckedChanged);
             // 
             // buttonPasivo
             // 
@@ -127,11 +129,33 @@ namespace contabilidad_1
             this.buttonPN.UseVisualStyleBackColor = true;
             this.buttonPN.CheckedChanged += new System.EventHandler(this.buttonPN_CheckedChanged);
             // 
+            // buttonGuardarCambios
+            // 
+            this.buttonGuardarCambios.Location = new System.Drawing.Point(61, 373);
+            this.buttonGuardarCambios.Name = "buttonGuardarCambios";
+            this.buttonGuardarCambios.Size = new System.Drawing.Size(149, 53);
+            this.buttonGuardarCambios.TabIndex = 13;
+            this.buttonGuardarCambios.Text = "Guardar";
+            this.buttonGuardarCambios.UseVisualStyleBackColor = true;
+            this.buttonGuardarCambios.Click += new System.EventHandler(this.buttonGuardarCambios_Click);
+            // 
+            // buttonShow
+            // 
+            this.buttonShow.Location = new System.Drawing.Point(327, 373);
+            this.buttonShow.Name = "buttonShow";
+            this.buttonShow.Size = new System.Drawing.Size(161, 52);
+            this.buttonShow.TabIndex = 14;
+            this.buttonShow.Text = "Show x Console";
+            this.buttonShow.UseVisualStyleBackColor = true;
+            this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
+            // 
             // PlanCuentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1194, 635);
+            this.Controls.Add(this.buttonShow);
+            this.Controls.Add(this.buttonGuardarCambios);
             this.Controls.Add(this.buttonPN);
             this.Controls.Add(this.buttonRN);
             this.Controls.Add(this.buttonRP);
@@ -145,6 +169,10 @@ namespace contabilidad_1
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Button buttonShow;
+
+        private System.Windows.Forms.Button buttonGuardarCambios;
 
         private System.Windows.Forms.RadioButton buttonPasivo;
         private System.Windows.Forms.RadioButton buttonRP;

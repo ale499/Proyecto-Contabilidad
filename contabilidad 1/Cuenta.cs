@@ -2,7 +2,7 @@ namespace contabilidad_1
 {
     public class Cuenta
     {
-        public int Id;
+        public int Id=20;
         public string NombreCuenta;
         public TipoCuenta TipoCuenta;
     }
@@ -10,6 +10,7 @@ namespace contabilidad_1
 
 public enum TipoCuenta
 {
+    SinDefinir,
     Activo,
     Pasivo,
     PatrimonioNeto,

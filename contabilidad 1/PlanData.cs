@@ -4,6 +4,14 @@ namespace contabilidad_1
 {
     public class PlanData
     {
-        private List<Cuenta> planCuentas = new List<Cuenta>();
+        public List<Cuenta> planCuentas = new List<Cuenta>();
     }
+    
+}
+
+public class Cuenta
+{
+    public int Id = 20;
+    public string NombreCuenta;
+    public TipoCuenta TipoCuenta;
 }
